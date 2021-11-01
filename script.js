@@ -10,7 +10,13 @@ function changeTextColor() {
         }
 }
 
-
+function changeWords() {
+    let mySentence = document.getElementById("discoTime").innerHTML;
+    // mySentence.replace("jazz", "disco");
+    // This replaces multiple words
+    mySentence.replace(/Jazz/g, "disco");
+    document.getElementById("discoTime").innerHTML = mySentence;
+}
 
 const handleButtonColorChange = () => {
     let button = document.getElementById('target')
@@ -21,16 +27,4 @@ const handleButtonColorChange = () => {
         button.style.backgroundColor = 'green'
     }
 }
-
-function changeWords() {
-    let mySentence = document.getElementById("discoTime").innerHTML;
-
-    mySentence.replace("jazz", "disco");
-
-    // This replaces multiple words
-    // let newSentence = mySentence.replace(/jazz/g, "disco");
-
-    document.getElementById("discoTime").innerHTML = mySentence;
-}
-
 
