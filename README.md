@@ -1,1 +1,1 @@
-# java-script-challenge
+# javascript-events-challenge
