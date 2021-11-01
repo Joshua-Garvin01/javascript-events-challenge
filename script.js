@@ -2,13 +2,15 @@ function changeTextColor() {
     let PH1 = document.getElementById("PH1")
     if (PH1.style.color === "black") {
         PH1.style.color = "red"
-        //console.log("josh turning red")
-        else {
+
+        //console.log("turning red")
+    } else {
             PH1.style.color = "black"
-            console.log("joshua turning black")
+            // console.log("turning black")
         }
-    }
 }
+
+
 
 const handleButtonColorChange = () => {
     let button = document.getElementById('target')
