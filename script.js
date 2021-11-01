@@ -25,12 +25,36 @@ const handleButtonColorChange = () => {
 function changeWords() {
     let mySentence = document.getElementById("discoTime").innerHTML;
 
-    mySentence.replace("jazz", "disco");
+   // mySentence.replace("jazz", "disco");
+    let newSentence = mySentence.replace(/jazz/gi, "disco");
+
+    document.getElementById("discoTime").innerHTML = mySentence;
 
     // This replaces multiple words
     // let newSentence = mySentence.replace(/jazz/g, "disco");
 
-    document.getElementById("discoTime").innerHTML = mySentence;
+
 }
 
+// function changeTheWords() {
+//     let mySentence = document.getElementById("changeIt").innerHTML;
+//
+//     //let newSentence = mySentence.replace("monkey", "tasmanian devil");
+//
+//     // This replaces multiple words
+//     let newSentence = mySentence.replace(/monkey/g, "tasmanian devil");
+//
+//     document.getElementById("changeIt").innerHTML = newSentence;
+// }
+
+function changeTheWords() {
+    let mySentence = document.getElementById("sample").innerHTML;
+
+    //let newSentence = mySentence.replace("monkey", "tasmanian devil");
+
+    // This replaces multiple words
+    let newSentence = mySentence.replace(/monkey/g, "tasmanian devil");
+
+    document.getElementById("sample").innerHTML = newSentence;
+}
 
