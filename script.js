@@ -22,3 +22,15 @@ const handleButtonColorChange = () => {
     }
 }
 
+function changeWords() {
+    let mySentence = document.getElementById("discoTime").innerHTML;
+
+    mySentence.replace("jazz", "disco");
+
+    // This replaces multiple words
+    // let newSentence = mySentence.replace(/jazz/g, "disco");
+
+    document.getElementById("discoTime").innerHTML = mySentence;
+}
+
+
