@@ -28,4 +28,7 @@ function changeTheWords() {
 }
 
 function changeOneWord() {
+    let mySentence = document.getElementById("seeYouLater").innerHTML;
+    let newSentence = mySentence.replace("hello", "goodbye");
+    document.getElementById("seeYouLater").innerHTML = newSentence;
 }
